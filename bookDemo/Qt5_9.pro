@@ -19,3 +19,9 @@ SOURCES += \
     main.cpp
 
 include(chapter01/chapter01.pri)
+include(chapter02/chapter02.pri)
+
+RESOURCES += \
+    res.qrc
+
+RC_ICONS = res/images/AppIcon.ico
