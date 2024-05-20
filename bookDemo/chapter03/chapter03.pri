@@ -1,0 +1,1 @@
+include(3_1MetaObjectWidget/3_1MetaObjectWidget.pri)
