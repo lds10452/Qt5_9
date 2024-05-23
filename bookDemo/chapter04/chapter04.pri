@@ -1,1 +1,2 @@
 include(4_7ListWidgetMainWindow/4_7ListWidgetMainWindow.pri)
+include(4_8QTreeWidgetMainWindow/4_8QTreeWidgetMainWindow.pri)

@@ -145,5 +145,14 @@
         <file>res/images/undo2.bmp</file>
         <file>res/images/upfold1.bmp</file>
         <file>res/images/upfold2.bmp</file>
+        <file>res/images/15.ico</file>
+        <file>res/images/29.ico</file>
+        <file>res/images/31.ico</file>
+        <file>res/images/32.ico</file>
+        <file>res/images/35.ico</file>
+        <file>res/images/802.bmp</file>
+        <file>res/images/814.bmp</file>
+        <file>res/images/824.bmp</file>
+        <file>res/images/Documents.ico</file>
     </qresource>
 </RCC>
