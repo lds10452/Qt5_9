@@ -1,0 +1,1 @@
+include(4_7ListWidgetMainWindow/4_7ListWidgetMainWindow.pri)
