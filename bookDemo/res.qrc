@@ -154,5 +154,9 @@
         <file>res/images/814.bmp</file>
         <file>res/images/824.bmp</file>
         <file>res/images/Documents.ico</file>
+        <file>res/images/boy.ico</file>
+        <file>res/images/girl.ico</file>
+        <file>res/images/no.bmp</file>
+        <file>res/images/yes.bmp</file>
     </qresource>
 </RCC>
