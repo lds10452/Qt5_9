@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>727</width>
+    <width>845</width>
     <height>505</height>
    </rect>
   </property>
@@ -25,8 +25,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>432</width>
-         <height>440</height>
+         <width>536</width>
+         <height>392</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -54,10 +54,33 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>727</width>
+     <width>845</width>
      <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>目录树</string>
+    </property>
+    <addaction name="actAddFolder"/>
+    <addaction name="actAddFiles"/>
+    <addaction name="actDeleteItem"/>
+    <addaction name="actScanItems"/>
+    <addaction name="separator"/>
+    <addaction name="actQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actZoomIn"/>
+    <addaction name="actZoomOut"/>
+    <addaction name="actZoomRealSize"/>
+    <addaction name="actZoomFitW"/>
+    <addaction name="actZoomFitH"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QDockWidget" name="dockWidget">
@@ -67,6 +90,9 @@
    <property name="allowedAreas">
     <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
    </property>
+   <property name="windowTitle">
+    <string>图片目录树</string>
+   </property>
    <attribute name="dockWidgetArea">
     <number>1</number>
    </attribute>
@@ -74,9 +100,15 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QTreeWidget" name="treeFiles">
+       <attribute name="headerDefaultSectionSize">
+        <number>150</number>
+       </attribute>
        <column>
         <property name="text">
          <string>节点</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
         </property>
        </column>
        <column>
@@ -95,11 +127,67 @@
          <iconset resource="../../res.qrc">
           <normaloff>:/res/images/15.ico</normaloff>:/res/images/15.ico</iconset>
         </property>
+        <item>
+         <property name="text">
+          <string>分组节点</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../res.qrc">
+           <normaloff>:/res/images/open3.bmp</normaloff>:/res/images/open3.bmp</iconset>
+         </property>
+         <item>
+          <property name="text">
+           <string>图片节点</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../res.qrc">
+            <normaloff>:/res/images/31.ico</normaloff>:/res/images/31.ico</iconset>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>分组2</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>图片2</string>
+          </property>
+         </item>
+        </item>
        </item>
       </widget>
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actAddFolder"/>
+   <addaction name="actAddFiles"/>
+   <addaction name="actDeleteItem"/>
+   <addaction name="actScanItems"/>
+   <addaction name="separator"/>
+   <addaction name="actZoomIn"/>
+   <addaction name="actZoomOut"/>
+   <addaction name="actZoomRealSize"/>
+   <addaction name="actZoomFitW"/>
+   <addaction name="actZoomFitH"/>
+   <addaction name="separator"/>
+   <addaction name="actDockFloat"/>
+   <addaction name="actDockVisible"/>
+   <addaction name="actQuit"/>
   </widget>
   <action name="actAddFolder">
    <property name="icon">
@@ -294,5 +382,22 @@
  <resources>
   <include location="../../res.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>QTreeWidgetMainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
