@@ -6,6 +6,7 @@
 #include "chapter04/4_9QTableWidgetMainWindow/QTableWidgetMainWindow.h"
 #include "chapter05/5_1FileSysModelMainWindow/FileSysModelMainWindow.h"
 #include "chapter05/5_2QStringListModelWidget/QStringListModelWidget.h"
+#include "chapter05/5_3QStandardItemModelMainWindow/QStandardItemModelMainWindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +19,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new QTreeWidgetMainWindow;
 //    m_pWgt=new QTableWidgetMainWindow;
 //    m_pWgt=new FileSysModelMainWindow;//5
-    m_pWgt=new QStringListModelWidget;
+//    m_pWgt=new QStringListModelWidget;
+    m_pWgt=new QStandardItemModelMainWindow;
 
     m_pWgt->show();
 

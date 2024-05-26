@@ -158,5 +158,17 @@
         <file>res/images/girl.ico</file>
         <file>res/images/no.bmp</file>
         <file>res/images/yes.bmp</file>
+        <file>res/images/500.bmp</file>
+        <file>res/images/502.bmp</file>
+        <file>res/images/508.bmp</file>
+        <file>res/images/510.bmp</file>
+        <file>res/images/512.bmp</file>
+        <file>res/images/append.bmp</file>
+        <file>res/images/clean.bmp</file>
+        <file>res/images/delete.bmp</file>
+        <file>res/images/insert.bmp</file>
+        <file>res/images/open.bmp</file>
+        <file>res/images/remove.bmp</file>
+        <file>res/images/save.bmp</file>
     </qresource>
 </RCC>
