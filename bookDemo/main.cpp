@@ -8,6 +8,7 @@
 #include "chapter05/5_2QStringListModelWidget/QStringListModelWidget.h"
 #include "chapter05/5_3QStandardItemModelMainWindow/QStandardItemModelMainWindow.h"
 #include "chapter05/5_4CustomDelegateMainWindow/CustomDelegateMainWindow.h"
+#include "chapter06/6_1StandardDialogsDialog/StandardDialogsDialog.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +23,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new FileSysModelMainWindow;//5
 //    m_pWgt=new QStringListModelWidget;
 //    m_pWgt=new QStandardItemModelMainWindow;
-    m_pWgt=new CustomDelegateMainWindow;
+//    m_pWgt=new CustomDelegateMainWindow;
+    m_pWgt=new StandardDialogsDialog;//6
 
     m_pWgt->show();
 

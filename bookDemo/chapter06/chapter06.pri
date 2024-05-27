@@ -1,0 +1,1 @@
+include(6_1StandardDialogsDialog/6_1StandardDialogsDialog.pri)
