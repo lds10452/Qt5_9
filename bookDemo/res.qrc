@@ -170,5 +170,14 @@
         <file>res/images/open.bmp</file>
         <file>res/images/remove.bmp</file>
         <file>res/images/save.bmp</file>
+        <file>res/images/100.bmp</file>
+        <file>res/images/132.bmp</file>
+        <file>res/images/230.bmp</file>
+        <file>res/images/506.bmp</file>
+        <file>res/images/514.bmp</file>
+        <file>res/images/516.bmp</file>
+        <file>res/images/704.bmp</file>
+        <file>res/images/706.bmp</file>
+        <file>res/txt/JingXieNew.txt</file>
     </qresource>
 </RCC>
