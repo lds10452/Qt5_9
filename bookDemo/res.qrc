@@ -179,5 +179,18 @@
         <file>res/images/704.bmp</file>
         <file>res/images/706.bmp</file>
         <file>res/txt/JingXieNew.txt</file>
+        <file>res/images/2.ico</file>
+        <file>res/images/3.ico</file>
+        <file>res/images/43.ico</file>
+        <file>res/images/200.bmp</file>
+        <file>res/images/202.bmp</file>
+        <file>res/images/204.bmp</file>
+        <file>res/images/206.bmp</file>
+        <file>res/images/208.bmp</file>
+        <file>res/images/504.bmp</file>
+        <file>res/images/804.bmp</file>
+        <file>res/images/back2.jpg</file>
+        <file>res/images/Doc.ico</file>
+        <file>res/images/Excel.ico</file>
     </qresource>
 </RCC>
