@@ -11,6 +11,7 @@
 #include "chapter06/6_1StandardDialogsDialog/StandardDialogsDialog.h"
 #include "chapter06/6_2CustomDialogsMainWindow/CustomDialogsMainWindow.h"
 #include "chapter06/6_3MultiWindowMainWindow/MultiWindowMainWindow.h"
+#include "chapter06/6_4MDIMainWindow/MDIMainWindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -28,7 +29,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new CustomDelegateMainWindow;
 //    m_pWgt=new StandardDialogsDialog;//6
 //    m_pWgt=new CustomDialogsMainWindow;
-    m_pWgt=new MultiWindowMainWindow;
+//    m_pWgt=new MultiWindowMainWindow;
+    m_pWgt=new MDIMainWindow;
 
     m_pWgt->show();
 

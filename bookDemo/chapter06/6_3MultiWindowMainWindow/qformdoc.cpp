@@ -71,6 +71,41 @@ void QFormDoc::loadFromFile(QString &aFileName)
     }
 }
 
+QString QFormDoc::currentFileName()
+{
+    return  mCurrentFile;
+}
+
+bool QFormDoc::isFileOpened()
+{ //文件是否已打开
+    return mFileOpened;
+}
+
+void QFormDoc::setEditFont()
+{
+    QFont   font;
+    font=ui->plainTextEdit->font();
+
+    bool    ok;
+    font=QFontDialog::getFont(&ok,font);
+    ui->plainTextEdit->setFont(font);
+}
+
+void QFormDoc::textCut()
+{
+    ui->plainTextEdit->cut();
+}
+
+void QFormDoc::textCopy()
+{
+    ui->plainTextEdit->copy();
+}
+
+void QFormDoc::textPaste()
+{
+    ui->plainTextEdit->paste();
+}
+
 void QFormDoc::on_actOpen_triggered()
 {
 //    curPath=QCoreApplication::applicationDirPath(); //获取应用程序的路径

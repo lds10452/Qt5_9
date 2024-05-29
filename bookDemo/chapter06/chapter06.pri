@@ -1,3 +1,4 @@
 include(6_1StandardDialogsDialog/6_1StandardDialogsDialog.pri)
 include(6_2CustomDialogsMainWindow/6_2CustomDialogsMainWindow.pri)
 include(6_3MultiWindowMainWindow/6_3MultiWindowMainWindow.pri)
+include(6_4MDIMainWindow/6_4MDIMainWindow.pri)
