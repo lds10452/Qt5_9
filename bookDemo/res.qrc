@@ -192,5 +192,8 @@
         <file>res/images/back2.jpg</file>
         <file>res/images/Doc.ico</file>
         <file>res/images/Excel.ico</file>
+        <file>res/images/back.jpg</file>
+        <file>res/images/splash.jpg</file>
+        <file>res/images/splash2.jpg</file>
     </qresource>
 </RCC>
