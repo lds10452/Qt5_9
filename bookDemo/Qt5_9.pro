@@ -24,6 +24,7 @@ include(chapter03/chapter03.pri)
 include(chapter04/chapter04.pri)
 include(chapter05/chapter05.pri)
 include(chapter06/chapter06.pri)
+include(chapter07/chapter07.pri)
 
 RESOURCES += \
     res.qrc

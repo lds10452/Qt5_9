@@ -1,4 +1,5 @@
 ﻿#include <QApplication>
+#include <QTextCodec>
 #include "chapter02/2_4MixedDesign/mixeddesignmainwindow.h"
 #include "chapter03/3_1MetaObjectWidget/metaobjectwidget.h"
 #include "chapter04/4_7ListWidgetMainWindow/ListWidgetMainWindow.h"
@@ -13,9 +14,13 @@
 #include "chapter06/6_3MultiWindowMainWindow/MultiWindowMainWindow.h"
 #include "chapter06/6_4MDIMainWindow/MDIMainWindow.h"
 #include "chapter06/6_5SplashDialog/SplashDialog.h"
+#include "chapter07/7_1TextFile/TextFileMainWindow.h"
 
 int main(int argc, char *argv[])
 {
+    //解决汉字乱码问题
+//    QTextCodec *codec = QTextCodec::codecForName("UTF-8");
+//    QTextCodec::setCodecForLocale(codec); //解决汉字乱码问题
     QApplication a(argc, argv);
 
     QWidget*m_pWgt=NULL;
@@ -32,7 +37,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new CustomDialogsMainWindow;
 //    m_pWgt=new MultiWindowMainWindow;
 //    m_pWgt=new MDIMainWindow;
-    m_pWgt=new SplashDialog;
+//    m_pWgt=new SplashDialog;
+    m_pWgt=new TextFileMainWindow;//7
 
     m_pWgt->show();
 
