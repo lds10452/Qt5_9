@@ -16,6 +16,7 @@
 #include "chapter06/6_5SplashDialog/SplashDialog.h"
 #include "chapter07/7_1TextFile/TextFileMainWindow.h"
 #include "chapter07/7_2BinFile/BinFileMainWindow.h"
+#include "chapter07/7_3DirFiles/DirFilesDialog.h"
 
 int main(int argc, char *argv[])
 {
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
 //    QTextCodec *codec = QTextCodec::codecForName("UTF-8");
 //    QTextCodec::setCodecForLocale(codec); //解决汉字乱码问题
     QApplication a(argc, argv);
+    QCoreApplication::setOrganizationName("China University of Petroleum");
 
     QWidget*m_pWgt=NULL;
 //    m_pWgt=new MixedDesignMainWindow;//2
@@ -40,7 +42,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new MDIMainWindow;
 //    m_pWgt=new SplashDialog;
 //    m_pWgt=new TextFileMainWindow;//7
-    m_pWgt=new BinFileMainWindow;
+//    m_pWgt=new BinFileMainWindow;
+    m_pWgt=new DirFilesDialog;
 
     m_pWgt->show();
 

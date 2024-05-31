@@ -201,5 +201,9 @@
         <file>res/images/135.JPG</file>
         <file>res/images/171.JPG</file>
         <file>res/images/174.JPG</file>
+        <file>res/images/007.GIF</file>
+        <file>res/images/212.bmp</file>
+        <file>res/images/714.bmp</file>
+        <file>res/images/806.bmp</file>
     </qresource>
 </RCC>
