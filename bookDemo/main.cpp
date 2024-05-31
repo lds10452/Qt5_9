@@ -15,6 +15,7 @@
 #include "chapter06/6_4MDIMainWindow/MDIMainWindow.h"
 #include "chapter06/6_5SplashDialog/SplashDialog.h"
 #include "chapter07/7_1TextFile/TextFileMainWindow.h"
+#include "chapter07/7_2BinFile/BinFileMainWindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -38,7 +39,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new MultiWindowMainWindow;
 //    m_pWgt=new MDIMainWindow;
 //    m_pWgt=new SplashDialog;
-    m_pWgt=new TextFileMainWindow;//7
+//    m_pWgt=new TextFileMainWindow;//7
+    m_pWgt=new BinFileMainWindow;
 
     m_pWgt->show();
 
