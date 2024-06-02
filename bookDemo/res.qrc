@@ -205,5 +205,11 @@
         <file>res/images/212.bmp</file>
         <file>res/images/714.bmp</file>
         <file>res/images/806.bmp</file>
+        <file>res/pic/qt.jpg</file>
+        <file>res/pic/texture.jpg</file>
+        <file>res/pic/texture2.jpg</file>
+        <file>res/others/Doc.ico</file>
+        <file>res/others/Excel.ico</file>
+        <file>res/others/HY00006.MS3</file>
     </qresource>
 </RCC>

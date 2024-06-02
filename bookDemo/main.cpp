@@ -17,6 +17,10 @@
 #include "chapter07/7_1TextFile/TextFileMainWindow.h"
 #include "chapter07/7_2BinFile/BinFileMainWindow.h"
 #include "chapter07/7_3DirFiles/DirFilesDialog.h"
+#include "chapter08/8_1QPainterBasicWidget/QPainterBasicWidget.h"
+#include "chapter08/8_2PaintPathWidget/PaintPathWidget.h"
+#include "chapter08/8_3ViewportWidget/ViewportWidget.h"
+#include "chapter08/8_3PlotWidget/PlotWidget.h"
 
 int main(int argc, char *argv[])
 {
@@ -43,7 +47,11 @@ int main(int argc, char *argv[])
 //    m_pWgt=new SplashDialog;
 //    m_pWgt=new TextFileMainWindow;//7
 //    m_pWgt=new BinFileMainWindow;
-    m_pWgt=new DirFilesDialog;
+//    m_pWgt=new DirFilesDialog;
+//    m_pWgt=new QPainterBasicWidget;//8
+//    m_pWgt=new PaintPathWidget;
+    m_pWgt=new PlotWidget;
+//    m_pWgt=new ViewportWidget;
 
     m_pWgt->show();
 
