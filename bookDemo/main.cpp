@@ -21,6 +21,7 @@
 #include "chapter08/8_2PaintPathWidget/PaintPathWidget.h"
 #include "chapter08/8_3ViewportWidget/ViewportWidget.h"
 #include "chapter08/8_3PlotWidget/PlotWidget.h"
+#include "chapter08/8_4GraphicsCoordinateMainWindow/GraphicsCoordinateMainWindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -50,8 +51,9 @@ int main(int argc, char *argv[])
 //    m_pWgt=new DirFilesDialog;
 //    m_pWgt=new QPainterBasicWidget;//8
 //    m_pWgt=new PaintPathWidget;
-    m_pWgt=new PlotWidget;
+//    m_pWgt=new PlotWidget;
 //    m_pWgt=new ViewportWidget;
+    m_pWgt=new GraphicsCoordinateMainWindow;
 
     m_pWgt->show();
 

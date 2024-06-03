@@ -31,3 +31,5 @@ RESOURCES += \
     res.qrc
 
 RC_ICONS = res/images/AppIcon.ico
+
+INCLUDEPATH+=$$PWD/chapter08/8_4GraphicsCoordinateMainWindow #自定义控件时，需要指定自定义控件类的头文件目录
