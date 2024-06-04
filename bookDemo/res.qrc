@@ -211,5 +211,30 @@
         <file>res/others/Doc.ico</file>
         <file>res/others/Excel.ico</file>
         <file>res/others/HY00006.MS3</file>
+        <file>res/images/08.JPG</file>
+        <file>res/images/018.JPG</file>
+        <file>res/images/281.JPG</file>
+        <file>res/images/522.bmp</file>
+        <file>res/images/524.bmp</file>
+        <file>res/images/526.bmp</file>
+        <file>res/images/528.bmp</file>
+        <file>res/images/718.bmp</file>
+        <file>res/images/800.bmp</file>
+        <file>res/images/818.bmp</file>
+        <file>res/images/ARC.BMP</file>
+        <file>res/images/BUTTON.BMP</file>
+        <file>res/images/ELLIPSE.BMP</file>
+        <file>res/images/fileprint.png</file>
+        <file>res/images/FREEFORM.BMP</file>
+        <file>res/images/hmsetup.ico</file>
+        <file>res/images/Icon1242.ico</file>
+        <file>res/images/LINE.BMP</file>
+        <file>res/images/MCR.BMP</file>
+        <file>res/images/RECTANGL.BMP</file>
+        <file>res/images/rotateleft.png</file>
+        <file>res/images/rotateright.png</file>
+        <file>res/images/UNGROUP.BMP</file>
+        <file>res/images/zoomin.png</file>
+        <file>res/images/zoomout.png</file>
     </qresource>
 </RCC>

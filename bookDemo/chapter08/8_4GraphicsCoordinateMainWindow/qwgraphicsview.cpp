@@ -19,6 +19,23 @@ void QWGraphicsView::mousePressEvent(QMouseEvent *event)
     QGraphicsView::mousePressEvent(event);
 }
 
+void QWGraphicsView::mouseDoubleClickEvent(QMouseEvent *event)
+{ //鼠标双击事件
+    if (event->button()==Qt::LeftButton)
+    {
+//        QPoint  point;
+        QPoint point=event->pos(); //QGraphicsView的坐标
+        emit mouseDoubleClick(point);//释放信号
+    }
+    QGraphicsView::mouseDoubleClickEvent(event);
+}
+
+void QWGraphicsView::keyPressEvent(QKeyEvent *event)
+{ //按键事件
+    emit keyPress(event);
+    QGraphicsView::keyPressEvent(event);
+}
+
 QWGraphicsView::QWGraphicsView(QWidget *parent):QGraphicsView(parent)
 {
 
