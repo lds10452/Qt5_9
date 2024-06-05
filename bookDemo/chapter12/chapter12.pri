@@ -1,0 +1,1 @@
+include(12_1PromotionWidget/12_1PromotionWidget.pri)

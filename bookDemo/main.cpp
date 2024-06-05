@@ -24,6 +24,8 @@
 #include "chapter08/8_4GraphicsCoordinateMainWindow/GraphicsCoordinateMainWindow.h"
 #include "chapter08/8_5GraphicsItemDrawManiWindow/GraphicsItemDrawMainWindow.h"
 
+#include "chapter12/12_1PromotionWidget/PromotionWidget.h"
+
 int main(int argc, char *argv[])
 {
     //解决汉字乱码问题
@@ -55,7 +57,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new PlotWidget;
 //    m_pWgt=new ViewportWidget;
 //    m_pWgt=new GraphicsCoordinateMainWindow;
-    m_pWgt=new GraphicsItemDrawMainWindow;
+//    m_pWgt=new GraphicsItemDrawMainWindow;
+    m_pWgt=new PromotionWidget;//12
 
     m_pWgt->show();
 

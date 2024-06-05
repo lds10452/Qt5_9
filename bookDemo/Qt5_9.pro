@@ -27,9 +27,12 @@ include(chapter06/chapter06.pri)
 include(chapter07/chapter07.pri)
 include(chapter08/chapter08.pri)
 
+include(chapter12/chapter12.pri)
+
 RESOURCES += \
     res.qrc
 
 RC_ICONS = res/images/AppIcon.ico
 
 INCLUDEPATH+=$$PWD/chapter08/8_4GraphicsCoordinateMainWindow #自定义控件时，需要指定自定义控件类的头文件目录
+INCLUDEPATH+=$$PWD/chapter12/12_1PromotionWidget
