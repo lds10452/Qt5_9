@@ -1,1 +1,2 @@
 include(12_1PromotionWidget/12_1PromotionWidget.pri)
+#include(12_2BatteryUserWidget/12_2BatteryUserWidget.pri)
