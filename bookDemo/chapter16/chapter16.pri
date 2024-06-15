@@ -1,0 +1,1 @@
+include(16_1MultiLangMainWindow/16_1MultiLangMainWindow.pri)

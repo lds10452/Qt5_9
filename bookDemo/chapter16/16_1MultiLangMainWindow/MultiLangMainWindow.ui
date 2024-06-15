@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MultiLangMainWindow</class>
+ <widget class="QMainWindow" name="MultiLangMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>614</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actTab_SetSize"/>
+   <addaction name="actTab_SetHeader"/>
+   <addaction name="actTab_Locate"/>
+   <addaction name="actFile_Quit"/>
+   <addaction name="separator"/>
+   <addaction name="actLang_CN"/>
+   <addaction name="actLang_EN"/>
+  </widget>
+  <action name="actTab_SetSize">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/230.bmp</normaloff>:/images/images/230.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>表格大小</string>
+   </property>
+   <property name="toolTip">
+    <string>设置表格行数列数</string>
+   </property>
+  </action>
+  <action name="actTab_SetHeader">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/516.bmp</normaloff>:/images/images/516.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>设置表头</string>
+   </property>
+   <property name="toolTip">
+    <string>设置表头标题</string>
+   </property>
+  </action>
+  <action name="actFile_Quit">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出本软件</string>
+   </property>
+  </action>
+  <action name="actTab_Locate">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/304.bmp</normaloff>:/images/images/304.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>定位单元格</string>
+   </property>
+   <property name="toolTip">
+    <string>定位到某个单元格</string>
+   </property>
+  </action>
+  <action name="actLang_CN">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/CN.jpg</normaloff>:/images/images/CN.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>中文</string>
+   </property>
+  </action>
+  <action name="actLang_EN">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/timg2.jpg</normaloff>:/images/images/timg2.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -26,6 +26,14 @@
 
 #include "chapter12/12_1PromotionWidget/PromotionWidget.h"
 
+#include "chapter16/16_1MultiLangMainWindow/MultiLangMainWindow.h"
+
+#include    <QTranslator>
+#include    <QSettings>
+
+QTranslator *trans=NULL;
+QString readSetting();
+
 int main(int argc, char *argv[])
 {
     //解决汉字乱码问题
@@ -33,6 +41,14 @@ int main(int argc, char *argv[])
 //    QTextCodec::setCodecForLocale(codec); //解决汉字乱码问题
     QApplication a(argc, argv);
     QCoreApplication::setOrganizationName("China University of Petroleum");
+
+    trans=new QTranslator;
+    QString curLang=readSetting(); //读取语言设置
+    if (curLang=="EN")
+        trans->load("en.qm");
+    else
+        trans->load("cn.qm");
+    a.installTranslator(trans);
 
     QWidget*m_pWgt=NULL;
 //    m_pWgt=new MixedDesignMainWindow;//2
@@ -58,10 +74,19 @@ int main(int argc, char *argv[])
 //    m_pWgt=new ViewportWidget;
 //    m_pWgt=new GraphicsCoordinateMainWindow;
 //    m_pWgt=new GraphicsItemDrawMainWindow;
-    m_pWgt=new PromotionWidget;//12
+//    m_pWgt=new PromotionWidget;//12
+    m_pWgt=new MultiLangMainWindow;
 
     m_pWgt->show();
 
     return a.exec();
 }
 
+QString readSetting()
+{//从注册表读取上次设置的语言
+    QString organization="WWB-Qt";//用于注册表，
+    QString appName="5_9"; //HKEY_CURRENT_USER/WWB-Qt/amp13_1
+    QSettings  settings(organization,appName);//创建
+    QString Language=settings.value("Language","EN").toString();//读取 saved键的值
+    return  Language;
+}
