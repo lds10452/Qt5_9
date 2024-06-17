@@ -27,6 +27,7 @@
 #include "chapter12/12_1PromotionWidget/PromotionWidget.h"
 
 #include "chapter16/16_1MultiLangMainWindow/MultiLangMainWindow.h"
+#include "chapter16/16_2StyleMainWindow/StyleMainWindow.h"
 
 #include    <QTranslator>
 #include    <QSettings>
@@ -75,7 +76,8 @@ int main(int argc, char *argv[])
 //    m_pWgt=new GraphicsCoordinateMainWindow;
 //    m_pWgt=new GraphicsItemDrawMainWindow;
 //    m_pWgt=new PromotionWidget;//12
-    m_pWgt=new MultiLangMainWindow;
+//    m_pWgt=new MultiLangMainWindow;//16
+    m_pWgt=new StyleMainWindow;
 
     m_pWgt->show();
 

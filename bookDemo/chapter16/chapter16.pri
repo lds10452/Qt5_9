@@ -1,1 +1,2 @@
 include(16_1MultiLangMainWindow/16_1MultiLangMainWindow.pri)
+include(16_2StyleMainWindow/16_2StyleMainWindow.pri)

@@ -236,5 +236,22 @@
         <file>res/images/UNGROUP.BMP</file>
         <file>res/images/zoomin.png</file>
         <file>res/images/zoomout.png</file>
+        <file>res/images/00.JPG</file>
+        <file>res/images/606.bmp</file>
+        <file>res/images/616.bmp</file>
+        <file>res/images/618.bmp</file>
+        <file>res/images/628.bmp</file>
+        <file>res/images/630.bmp</file>
+        <file>res/images/812.bmp</file>
+        <file>res/images/296568.jpg</file>
+        <file>res/images/border.jpg</file>
+        <file>res/images/border2.jpg</file>
+        <file>res/images/check1.ico</file>
+        <file>res/images/checked.bmp</file>
+        <file>res/images/down.bmp</file>
+        <file>res/images/left.bmp</file>
+        <file>res/images/right.bmp</file>
+        <file>res/images/unchecked.bmp</file>
+        <file>res/images/up.bmp</file>
     </qresource>
 </RCC>
